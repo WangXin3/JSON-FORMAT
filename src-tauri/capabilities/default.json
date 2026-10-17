@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "Local database and explicit clipboard writes for the main window",
+  "windows": ["main"],
+  "permissions": ["core:default", "sql:default", "sql:allow-execute", "clipboard-manager:allow-write-text"]
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+src-tauri/target/
+.cache/
+.toolchain/
+*.log
+*.tsbuildinfo
+test-results/
+release/
+src-tauri/gen/schemas/

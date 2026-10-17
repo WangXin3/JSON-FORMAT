@@ -1,0 +1,26 @@
+[package]
+name = "json-format-desktop"
+version = "0.1.2"
+description = "A local JSON formatting workspace"
+authors = ["JSON FORMAT"]
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "json_format_lib"
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde_json = "1"
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-sql = { version = "2", features = ["sqlite"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
